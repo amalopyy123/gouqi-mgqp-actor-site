@@ -37,7 +37,7 @@
   let filteredActors = [];
   let appliedQuery = "";
   let actorMode = "collapsed";
-  let supplementaryMode = "collapsed";
+  let supplementaryMode = "expanded";
   let fixedMode = "collapsed";
   let faceMode = "dressed";
   let sourceMode = "collapsed";
@@ -124,7 +124,7 @@
     elements.faceMode.value = faceMode;
     actorMode = params.get("actor") === "expanded" ? "expanded" : "collapsed";
     elements.actorMode.value = actorMode;
-    supplementaryMode = ["collapsed", "expanded", "hidden"].includes(params.get("comment")) ? params.get("comment") : "collapsed";
+    supplementaryMode = ["collapsed", "expanded", "hidden"].includes(params.get("comment")) ? params.get("comment") : "expanded";
     elements.supplementaryMode.value = supplementaryMode;
     fixedMode = ["expanded", "collapsed", "hidden"].includes(params.get("fixed")) ? params.get("fixed") : "collapsed";
     elements.fixedMode.value = fixedMode;
@@ -259,7 +259,7 @@
     elements.searchInput.value = "";
     appliedQuery = "";
     actorMode = "collapsed";
-    supplementaryMode = "collapsed";
+    supplementaryMode = "expanded";
     fixedMode = "collapsed";
     elements.actorMode.value = actorMode;
     elements.supplementaryMode.value = supplementaryMode;
