@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <title>角色特征与备注一览</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <div>
+          <p class="eyebrow">Gouqi RESEARCH MOD</p>
+          <h1>角色特征与备注一览</h1>
+          <p class="subtitle">浏览角色固有能力、特征说明、补充备注和原始标签。</p>
+        </div>
+        <div class="status" id="load-status" role="status">正在加载数据…</div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="overview" aria-label="数据概览">
+        <div class="metric"><strong id="actor-count">-</strong><span>角色</span></div>
+        <div class="metric"><strong id="capability-count">-</strong><span>特征条目</span></div>
+        <div class="metric"><strong id="comment-count">-</strong><span>含备注</span></div>
+        <div class="metric"><strong id="source-count">-</strong><span>含来源标签</span></div>
+      </section>
+
+      <section class="controls" aria-label="搜索和筛选">
+        <div class="search-field">
+          <label for="search-input">搜索角色或说明</label>
+          <div class="search-row">
+            <input id="search-input" type="search" placeholder="ID、中文名、日文名或中文说明" autocomplete="off">
+            <button class="action-button" id="search-button" type="button">搜索</button>
+          </div>
+        </div>
+        <div class="filter-row">
+          <label class="mode-control" for="face-mode">
+            <span>头像</span>
+            <select id="face-mode">
+              <option value="dressed">穿衣服版</option>
+              <option value="original">原版</option>
+            </select>
+          </label>
+          <label class="mode-control" for="actor-mode">
+            <span>角色说明</span>
+            <select id="actor-mode">
+              <option value="collapsed">收缩</option>
+              <option value="expanded">展开（查看）</option>
+            </select>
+          </label>
+          <label class="mode-control" for="supplementary-mode">
+            <span>补充备注</span>
+            <select id="supplementary-mode">
+              <option value="collapsed">收缩（可查看）</option>
+              <option value="expanded">展开</option>
+              <option value="hidden">隐藏</option>
+            </select>
+          </label>
+          <label class="mode-control" for="fixed-mode">
+            <span>原固有能力</span>
+            <select id="fixed-mode">
+              <option value="expanded">查看</option>
+              <option value="collapsed">收缩（可查看）</option>
+              <option value="hidden">隐藏</option>
+            </select>
+          </label>
+          <label class="mode-control" for="source-mode">
+            <span>source_raw</span>
+            <select id="source-mode">
+              <option value="collapsed">收缩（可查看）</option>
+              <option value="expanded">展开</option>
+              <option value="hidden">隐藏</option>
+            </select>
+          </label>
+          <button class="action-button secondary" id="clear-filters" type="button">清除筛选</button>
+        </div>
+        <div class="result-line" id="result-line">等待数据加载</div>
+      </section>
+
+      <section id="actor-list" class="actor-list" aria-live="polite"></section>
+      <section id="empty-state" class="empty-state" hidden>
+        <h2>没有匹配的角色</h2>
+        <p>请尝试减少搜索词或清除筛选条件。</p>
+      </section>
+      <section id="error-state" class="empty-state error-state" hidden>
+        <h2>数据加载失败</h2>
+        <p id="error-message">请通过本地开发服务器打开页面。</p>
+      </section>
+    </main>
+
+    <nav class="scroll-nav" aria-label="页面导航">
+      <button class="scroll-button" id="scroll-top" type="button" title="回到顶部" aria-label="回到顶部" hidden>↑</button>
+      <button class="scroll-button" id="scroll-bottom" type="button" title="跳到底部" aria-label="跳到底部" hidden>↓</button>
+    </nav>
+
+    <template id="actor-template">
+      <details class="actor-card">
+        <summary class="actor-summary">
+          <span class="face-frame">
+            <img class="actor-face" loading="lazy" alt="">
+            <span class="face-placeholder" aria-hidden="true"></span>
+          </span>
+          <span class="actor-id"></span>
+          <span class="actor-names">
+            <strong class="name-chinese"></strong>
+            <span class="name-japanese"></span>
+          </span>
+          <span class="actor-meta"></span>
+          <span class="summary-chevron" aria-hidden="true">›</span>
+        </summary>
+        <div class="actor-body"></div>
+      </details>
+    </template>
+
+    <script src="config.js" defer></script>
+    <script src="app.js" defer></script>
+  </body>
+</html>
