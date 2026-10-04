@@ -107,7 +107,7 @@
     const params = new URLSearchParams(window.location.search);
     const query = appliedQuery;
     if (query) params.set("q", query); else params.delete("q");
-    if (faceMode === "original") params.set("face", faceMode); else params.delete("face");
+    if (faceMode !== "dressed") params.set("face", faceMode); else params.delete("face");
     if (actorMode === "collapsed") params.set("actor", actorMode); else params.delete("actor");
     if (supplementaryMode !== "collapsed") params.set("comment", supplementaryMode); else params.delete("comment");
     if (fixedMode !== "collapsed") params.set("fixed", fixedMode); else params.delete("fixed");
@@ -120,7 +120,7 @@
     const params = new URLSearchParams(window.location.search);
     appliedQuery = params.get("q") || "";
     elements.searchInput.value = appliedQuery;
-    faceMode = params.get("face") === "original" ? "original" : "dressed";
+    faceMode = ["dressed", "original", "hidden"].includes(params.get("face")) ? params.get("face") : "dressed";
     elements.faceMode.value = faceMode;
     actorMode = params.get("actor") === "expanded" ? "expanded" : "collapsed";
     elements.actorMode.value = actorMode;
@@ -140,6 +140,10 @@
   }
 
   function setFaceSource(faceFrame, actor) {
+    if (faceMode === "hidden") {
+      faceFrame.remove();
+      return;
+    }
     const image = faceFrame.querySelector(".actor-face");
     const placeholder = faceFrame.querySelector(".face-placeholder");
     const actorLabel = actor.id || "?";
@@ -217,7 +221,10 @@
   function renderActor(actor) {
     const fragment = elements.actorTemplate.content.cloneNode(true);
     const card = fragment.querySelector(".actor-card");
-    setFaceSource(fragment.querySelector(".face-frame"), actor);
+    const summary = fragment.querySelector(".actor-summary");
+    const faceFrame = fragment.querySelector(".face-frame");
+    if (faceMode === "hidden") summary.classList.add("faces-hidden");
+    setFaceSource(faceFrame, actor);
     fragment.querySelector(".actor-id").textContent = "#" + (actor.id || "?");
     fragment.querySelector(".name-chinese").textContent = actor.nameChinese || "未命名角色";
     fragment.querySelector(".name-japanese").textContent = actor.nameJapanese || "暂无日文名";
@@ -324,7 +331,7 @@
     }
   });
   elements.faceMode.addEventListener("change", function () {
-    faceMode = elements.faceMode.value === "original" ? "original" : "dressed";
+    faceMode = ["dressed", "original", "hidden"].includes(elements.faceMode.value) ? elements.faceMode.value : "dressed";
     applyFilters();
   });
   elements.actorMode.addEventListener("change", function () {

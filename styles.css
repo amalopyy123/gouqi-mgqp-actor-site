@@ -58,6 +58,7 @@ button { font: inherit; cursor: pointer; }
 .actor-list { display: grid; gap: 8px; }
 .actor-card { border: 1px solid #d9dde3; border-radius: 6px; background: #fff; overflow: hidden; }
 .actor-summary { display: grid; grid-template-columns: 52px 68px minmax(180px, 1fr) auto 20px; align-items: center; gap: 12px; min-height: 62px; padding: 10px 14px; cursor: pointer; list-style: none; }
+.actor-summary.faces-hidden { grid-template-columns: 68px minmax(180px, 1fr) auto 20px; }
 .actor-summary::-webkit-details-marker { display: none; }
 .actor-summary:hover { background: #f8fafc; }
 .face-frame { display: grid; place-items: center; width: 48px; height: 48px; border: 1px solid #d9dde3; border-radius: 4px; background: #eef1f5; overflow: hidden; }
@@ -103,6 +104,7 @@ button { font: inherit; cursor: pointer; }
   .status { margin-top: 12px; }
   .overview { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .actor-summary { grid-template-columns: 44px 50px minmax(0, 1fr) 20px; gap: 8px; }
+  .actor-summary.faces-hidden { grid-template-columns: 50px minmax(0, 1fr) 20px; }
   .face-frame, .actor-face { width: 42px; height: 42px; }
   .actor-meta { grid-column: 3; grid-row: 2; text-align: left; }
   .summary-chevron { grid-column: 4; grid-row: 1 / span 2; }

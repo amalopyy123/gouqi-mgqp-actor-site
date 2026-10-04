@@ -26,7 +26,7 @@ http://localhost:4173/
 
 页面运行时读取 `research-mod/web-data/actor-web/actors.json`，该文件由 `build_actor_web_data.py` 从数据源生成。原始 `research-mod/web-data/actors.json` 仍然保留，网页不再访问上层目录。`app.js` 对缺失字段做了空值处理；缺少固有能力信息的角色会显示明确提示。
 
-头像地址由 `config.js` 的 `faceBaseUrl` 配置。当前线上配置为 `https://mgqp-actor-images.21001231.xyz/assets`，网页会读取 `faces-dressed/` 和 `faces-original/` 下按角色 ID 命名的图片。
+头像地址由 `config.js` 的 `faceBaseUrl` 配置。当前线上配置为 `https://mgqp-actor-images.21001231.xyz/assets`，网页会读取 `faces-dressed/` 和 `faces-original/` 下按角色 ID 命名的图片。头像选择“隐藏”时不会创建图片请求，并会移除头像列占用的空间。
 
 ## 发布到独立网站项目
 
@@ -41,6 +41,14 @@ powershell -ExecutionPolicy Bypass -File .\research-mod\web-data\publish_actor_s
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\research-mod\web-data\publish_actor_site.ps1 -Destination .\git文件\gouqi-mgqp-actor-site
 ```
+
+如果原始 CSV 有更新，先重新生成网页数据再同步：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\research-mod\web-data\publish_actor_site.ps1 -RefreshData
+```
+
+不加 `-RefreshData` 时，脚本不会重新读取 CSV，只会复制当前网页目录中的文件。
 
 ## 当前限制
 
