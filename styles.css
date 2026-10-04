@@ -32,6 +32,8 @@ body { margin: 0; min-width: 320px; }
 .eyebrow { margin: 0 0 4px; color: #667085; font-size: 12px; font-weight: 700; letter-spacing: .1em; }
 h1 { margin: 0; font-size: clamp(24px, 3vw, 36px); line-height: 1.2; }
 .subtitle { margin: 8px 0 0; color: #667085; }
+.site-link { margin-left: 10px; color: #315f92; font-weight: 600; text-decoration: none; }
+.site-link:hover { text-decoration: underline; }
 .status { color: #667085; font-size: 14px; white-space: nowrap; }
 
 .page-shell { padding: 20px 0 56px; }
