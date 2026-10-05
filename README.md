@@ -58,6 +58,20 @@ powershell -ExecutionPolicy Bypass -File .\research-mod\web-data\publish_actor_s
 
 不加 `-RefreshData` 时，脚本不会重新读取 CSV，只会复制当前网页目录中的文件。
 
+## 生成离线版
+
+在仓库根目录执行：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\research-mod\web-data\build_actor_offline.ps1
+```
+
+脚本默认生成 `git文件/gouqi-mgqp-actor-offline/`，会生成 `offline-data.js`、复制三份 CSV 和两套本地头像。生成后可以直接双击离线版目录中的 `index.html`，页面也提供跳转到在线版的链接。也可以指定其他输出目录：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\research-mod\web-data\build_actor_offline.ps1 -Destination .\离线发布包
+```
+
 ## 当前限制
 
 - 首版会将所有角色摘要和可展开内容建立在页面中，适合当前 888 个角色规模；如果以后数据继续扩大，可以再改成分页或虚拟列表。

@@ -2032,7 +2032,7 @@
           "group": "技能强化",
           "category": "skill_boost",
           "description_chinese": "勇者技强化 +30%",
-          "comment_chinese": "",
+          "comment_chinese": "角色4另有<スキルタイプ強化 7-100,26-100,27-100,48-100,70-100>，其中勇者技（技能类型ID 48）再次获得+100%强化。游戏会将同一技能类型的技能强化相加，因此勇者技实际强化合计为+130%（伤害倍率×2.3）。",
           "source_raw": "<スキルタイプ強化 48-30>",
           "record_count": 1,
           "ability_orders": [
@@ -2051,7 +2051,7 @@
               "translation_status": "translated",
               "original_text": "<スキルタイプ強化 48-30>",
               "source_raw": "<スキルタイプ強化 48-30>",
-              "comment_chinese": "",
+              "comment_chinese": "角色4另有<スキルタイプ強化 7-100,26-100,27-100,48-100,70-100>，其中勇者技（技能类型ID 48）再次获得+100%强化。游戏会将同一技能类型的技能强化相加，因此勇者技实际强化合计为+130%（伤害倍率×2.3）。",
               "ability_order": 88
             }
           ]
@@ -2059,13 +2059,12 @@
         {
           "group": "技能强化",
           "category": "skill_boost",
-          "description_chinese": "濒死时勇者技、剑技、圣技、暗技、混沌强化 +200%",
-          "comment_chinese": "",
-          "source_raw": "<窮地スキルタイプ強化 48-200>；<窮地スキルタイプ強化 7-200,26-200,27-200,48-200,70-200>",
-          "record_count": 2,
+          "description_chinese": "濒死时勇者技强化 +200%",
+          "comment_chinese": "角色4的另一条<窮地スキルタイプ強化>备注也包含勇者技（技能类型ID 48）+200%。游戏对同一技能类型的濒死强化取最高值，不会叠加，因此勇者技实际仍为濒死时强化+200%，不是+400%。",
+          "source_raw": "<窮地スキルタイプ強化 48-200>",
+          "record_count": 1,
           "ability_orders": [
-            89,
-            98
+            89
           ],
           "source_records": [
             {
@@ -2080,23 +2079,8 @@
               "translation_status": "translated",
               "original_text": "<窮地スキルタイプ強化 48-200>",
               "source_raw": "<窮地スキルタイプ強化 48-200>",
-              "comment_chinese": "",
+              "comment_chinese": "角色4的另一条<窮地スキルタイプ強化>备注也包含勇者技（技能类型ID 48）+200%。游戏对同一技能类型的濒死强化取最高值，不会叠加，因此勇者技实际仍为濒死时强化+200%，不是+400%。",
               "ability_order": 89
-            },
-            {
-              "category": "skill_boost",
-              "importance": "core",
-              "description_japanese": "瀕死時、剣技・聖技・闇技・勇者技・カオスの威力 +200%",
-              "description_chinese": "濒死时剑技、圣技、暗技、勇者技、混沌强化 +200%",
-              "value_type": "additive_percent",
-              "value_raw": "200",
-              "value_display": "+200%",
-              "source": "note",
-              "translation_status": "translated",
-              "original_text": "<窮地スキルタイプ強化 7-200,26-200,27-200,48-200,70-200>",
-              "source_raw": "<窮地スキルタイプ強化 7-200,26-200,27-200,48-200,70-200>",
-              "comment_chinese": "",
-              "ability_order": 98
             }
           ]
         },
@@ -2252,7 +2236,7 @@
           "group": "技能强化",
           "category": "skill_boost",
           "description_chinese": "剑技、圣技、暗技、勇者技、混沌强化 +100%",
-          "comment_chinese": "",
+          "comment_chinese": "该备注中的勇者技（技能类型ID 48）与角色4另一条<スキルタイプ強化 48-30>备注重复；游戏会将同一技能类型的技能强化相加，因此勇者技实际强化合计为+130%（伤害倍率×2.3）。",
           "source_raw": "<スキルタイプ強化 7-100,26-100,27-100,48-100,70-100>",
           "record_count": 1,
           "ability_orders": [
@@ -2271,8 +2255,36 @@
               "translation_status": "translated",
               "original_text": "<スキルタイプ強化 7-100,26-100,27-100,48-100,70-100>",
               "source_raw": "<スキルタイプ強化 7-100,26-100,27-100,48-100,70-100>",
-              "comment_chinese": "",
+              "comment_chinese": "该备注中的勇者技（技能类型ID 48）与角色4另一条<スキルタイプ強化 48-30>备注重复；游戏会将同一技能类型的技能强化相加，因此勇者技实际强化合计为+130%（伤害倍率×2.3）。",
               "ability_order": 97
+            }
+          ]
+        },
+        {
+          "group": "技能强化",
+          "category": "skill_boost",
+          "description_chinese": "濒死时剑技、圣技、暗技、勇者技、混沌强化 +200%",
+          "comment_chinese": "该备注中的勇者技（技能类型ID 48）与角色4另一条<窮地スキルタイプ強化 48-200>备注重复，另一条同样为+200%。游戏对同一技能类型的濒死强化取最高值，不会叠加，因此勇者技实际仍为濒死时强化+200%，不是+400%。",
+          "source_raw": "<窮地スキルタイプ強化 7-200,26-200,27-200,48-200,70-200>",
+          "record_count": 1,
+          "ability_orders": [
+            98
+          ],
+          "source_records": [
+            {
+              "category": "skill_boost",
+              "importance": "core",
+              "description_japanese": "瀕死時、剣技・聖技・闇技・勇者技・カオスの威力 +200%",
+              "description_chinese": "濒死时剑技、圣技、暗技、勇者技、混沌强化 +200%",
+              "value_type": "additive_percent",
+              "value_raw": "200",
+              "value_display": "+200%",
+              "source": "note",
+              "translation_status": "translated",
+              "original_text": "<窮地スキルタイプ強化 7-200,26-200,27-200,48-200,70-200>",
+              "source_raw": "<窮地スキルタイプ強化 7-200,26-200,27-200,48-200,70-200>",
+              "comment_chinese": "该备注中的勇者技（技能类型ID 48）与角色4另一条<窮地スキルタイプ強化 48-200>备注重复，另一条同样为+200%。游戏对同一技能类型的濒死强化取最高值，不会叠加，因此勇者技实际仍为濒死时强化+200%，不是+400%。",
+              "ability_order": 98
             }
           ]
         },
@@ -5641,13 +5653,12 @@
         {
           "group": "技能强化",
           "category": "skill_boost",
-          "description_chinese": "濒死时剑技、刀技强化 +200%",
+          "description_chinese": "濒死时剑技强化 +200%",
           "comment_chinese": "",
-          "source_raw": "<窮地スキルタイプ強化 7-200>；<窮地スキルタイプ強化 9-200>",
-          "record_count": 2,
+          "source_raw": "<窮地スキルタイプ強化 7-200>",
+          "record_count": 1,
           "ability_orders": [
-            45,
-            46
+            45
           ],
           "source_records": [
             {
@@ -5664,7 +5675,20 @@
               "source_raw": "<窮地スキルタイプ強化 7-200>",
               "comment_chinese": "",
               "ability_order": 45
-            },
+            }
+          ]
+        },
+        {
+          "group": "技能强化",
+          "category": "skill_boost",
+          "description_chinese": "濒死时刀技强化 +200%",
+          "comment_chinese": "",
+          "source_raw": "<窮地スキルタイプ強化 9-200>",
+          "record_count": 1,
+          "ability_orders": [
+            46
+          ],
+          "source_records": [
             {
               "category": "skill_boost",
               "importance": "core",
@@ -85415,7 +85439,7 @@
           "group": "其他特性",
           "category": "trait",
           "description_chinese": "被选为攻击目标的权重变为×25%（减少75%）",
-          "comment_chinese": "",
+          "comment_chinese": "角色同时具有code=23、data_id=0的value=1与value=0.25；该参数表示被选为攻击目标的权重，value=1是中性倍率。同类特性按乘法合并，最终权重仍为25%（减少75%）；最终被选中的概率还取决于队伍其他成员的权重。",
           "source_raw": "code=23, data_id=0, value=0.25",
           "record_count": 1,
           "ability_orders": [
@@ -85434,7 +85458,7 @@
               "translation_status": "translated",
               "original_text": "攻撃対象に選ばれる重みが×25%（75%減少）",
               "source_raw": "code=23, data_id=0, value=0.25",
-              "comment_chinese": "",
+              "comment_chinese": "角色同时具有code=23、data_id=0的value=1与value=0.25；该参数表示被选为攻击目标的权重，value=1是中性倍率。同类特性按乘法合并，最终权重仍为25%（减少75%）；最终被选中的概率还取决于队伍其他成员的权重。",
               "ability_order": 12
             }
           ]
@@ -97037,7 +97061,7 @@
           "group": "其他特性",
           "category": "trait",
           "description_chinese": "被选为攻击目标的权重变为×25%（减少75%）",
-          "comment_chinese": "",
+          "comment_chinese": "角色同时具有code=23、data_id=0的value=1与value=0.25；该参数表示被选为攻击目标的权重，value=1是中性倍率。同类特性按乘法合并，最终权重仍为25%（减少75%）；最终被选中的概率还取决于队伍其他成员的权重。",
           "source_raw": "code=23, data_id=0, value=0.25",
           "record_count": 1,
           "ability_orders": [
@@ -97056,7 +97080,7 @@
               "translation_status": "translated",
               "original_text": "攻撃対象に選ばれる重みが×25%（75%減少）",
               "source_raw": "code=23, data_id=0, value=0.25",
-              "comment_chinese": "",
+              "comment_chinese": "角色同时具有code=23、data_id=0的value=1与value=0.25；该参数表示被选为攻击目标的权重，value=1是中性倍率。同类特性按乘法合并，最终权重仍为25%（减少75%）；最终被选中的概率还取决于队伍其他成员的权重。",
               "ability_order": 11
             }
           ]
@@ -100570,7 +100594,7 @@
           "group": "行动次数",
           "category": "action",
           "description_chinese": "50%概率追加1次行动",
-          "comment_chinese": "",
+          "comment_chinese": "角色同时拥有两条追加行动特性：50%和35%概率各自独立判定追加1次行动。至少追加1次行动的概率为67.5%，两次判定都成功的概率为17.5%，最多追加2次行动。",
           "source_raw": "code=61, data_id=0, value=0.5",
           "record_count": 1,
           "ability_orders": [
@@ -100589,7 +100613,7 @@
               "translation_status": "translated",
               "original_text": "50%の確率で追加行動1回",
               "source_raw": "code=61, data_id=0, value=0.5",
-              "comment_chinese": "",
+              "comment_chinese": "角色同时拥有两条追加行动特性：50%和35%概率各自独立判定追加1次行动。至少追加1次行动的概率为67.5%，两次判定都成功的概率为17.5%，最多追加2次行动。",
               "ability_order": 8
             }
           ]
@@ -100598,7 +100622,7 @@
           "group": "行动次数",
           "category": "action",
           "description_chinese": "35%概率追加1次行动",
-          "comment_chinese": "",
+          "comment_chinese": "角色同时拥有两条追加行动特性：50%和35%概率各自独立判定追加1次行动。至少追加1次行动的概率为67.5%，两次判定都成功的概率为17.5%，最多追加2次行动。",
           "source_raw": "code=61, data_id=0, value=0.35",
           "record_count": 1,
           "ability_orders": [
@@ -100617,7 +100641,7 @@
               "translation_status": "translated",
               "original_text": "35%の確率で追加行動1回",
               "source_raw": "code=61, data_id=0, value=0.35",
-              "comment_chinese": "",
+              "comment_chinese": "角色同时拥有两条追加行动特性：50%和35%概率各自独立判定追加1次行动。至少追加1次行动的概率为67.5%，两次判定都成功的概率为17.5%，最多追加2次行动。",
               "ability_order": 9
             }
           ]
@@ -123963,7 +123987,7 @@
           "group": "其他特性",
           "category": "trait",
           "description_chinese": "被选为攻击目标的权重变为×50%（减少50%）",
-          "comment_chinese": "",
+          "comment_chinese": "角色同时具有code=23、data_id=0的value=1与value=0.5；该参数表示被选为攻击目标的权重，value=1是中性倍率。同类特性按乘法合并，最终权重仍为50%（减少50%）；最终被选中的概率还取决于队伍其他成员的权重。",
           "source_raw": "code=23, data_id=0, value=0.5",
           "record_count": 1,
           "ability_orders": [
@@ -123982,7 +124006,7 @@
               "translation_status": "translated",
               "original_text": "攻撃対象に選ばれる重みが×50%（50%減少）",
               "source_raw": "code=23, data_id=0, value=0.5",
-              "comment_chinese": "",
+              "comment_chinese": "角色同时具有code=23、data_id=0的value=1与value=0.5；该参数表示被选为攻击目标的权重，value=1是中性倍率。同类特性按乘法合并，最终权重仍为50%（减少50%）；最终被选中的概率还取决于队伍其他成员的权重。",
               "ability_order": 8
             }
           ]
@@ -124268,7 +124292,7 @@
           "group": "其他特性",
           "category": "trait",
           "description_chinese": "被选为攻击目标的权重变为×50%（减少50%）",
-          "comment_chinese": "",
+          "comment_chinese": "角色同时具有code=23、data_id=0的value=1与value=0.5；该参数表示被选为攻击目标的权重，value=1是中性倍率。同类特性按乘法合并，最终权重仍为50%（减少50%）；最终被选中的概率还取决于队伍其他成员的权重。",
           "source_raw": "code=23, data_id=0, value=0.5",
           "record_count": 1,
           "ability_orders": [
@@ -124287,7 +124311,7 @@
               "translation_status": "translated",
               "original_text": "攻撃対象に選ばれる重みが×50%（50%減少）",
               "source_raw": "code=23, data_id=0, value=0.5",
-              "comment_chinese": "",
+              "comment_chinese": "角色同时具有code=23、data_id=0的value=1与value=0.5；该参数表示被选为攻击目标的权重，value=1是中性倍率。同类特性按乘法合并，最终权重仍为50%（减少50%）；最终被选中的概率还取决于队伍其他成员的权重。",
               "ability_order": 9
             }
           ]
@@ -133562,7 +133586,7 @@
           "group": "行动次数",
           "category": "action",
           "description_chinese": "50%概率追加1次行动",
-          "comment_chinese": "",
+          "comment_chinese": "角色同时拥有两条追加行动特性：50%和25%概率各自独立判定追加1次行动。至少追加1次行动的概率为62.5%，两次判定都成功的概率为12.5%，平均总行动次数为1.75次。",
           "source_raw": "code=61, data_id=0, value=0.5",
           "record_count": 1,
           "ability_orders": [
@@ -133581,7 +133605,7 @@
               "translation_status": "translated",
               "original_text": "50%の確率で追加行動1回",
               "source_raw": "code=61, data_id=0, value=0.5",
-              "comment_chinese": "",
+              "comment_chinese": "角色同时拥有两条追加行动特性：50%和25%概率各自独立判定追加1次行动。至少追加1次行动的概率为62.5%，两次判定都成功的概率为12.5%，平均总行动次数为1.75次。",
               "ability_order": 11
             }
           ]
@@ -133590,7 +133614,7 @@
           "group": "行动次数",
           "category": "action",
           "description_chinese": "25%概率追加1次行动",
-          "comment_chinese": "",
+          "comment_chinese": "角色同时拥有两条追加行动特性：50%和25%概率各自独立判定追加1次行动。至少追加1次行动的概率为62.5%，两次判定都成功的概率为12.5%，平均总行动次数为1.75次。",
           "source_raw": "code=61, data_id=0, value=0.25",
           "record_count": 1,
           "ability_orders": [
@@ -133609,7 +133633,7 @@
               "translation_status": "translated",
               "original_text": "25%の確率で追加行動1回",
               "source_raw": "code=61, data_id=0, value=0.25",
-              "comment_chinese": "",
+              "comment_chinese": "角色同时拥有两条追加行动特性：50%和25%概率各自独立判定追加1次行动。至少追加1次行动的概率为62.5%，两次判定都成功的概率为12.5%，平均总行动次数为1.75次。",
               "ability_order": 12
             }
           ]
@@ -201913,7 +201937,7 @@
           "group": "其他特性",
           "category": "trait",
           "description_chinese": "被选为攻击目标的权重变为×50%（减少50%）",
-          "comment_chinese": "",
+          "comment_chinese": "角色同时具有code=23、data_id=0的value=1与value=0.5；该参数表示被选为攻击目标的权重，value=1是中性倍率。同类特性按乘法合并，最终权重仍为50%（减少50%）；最终被选中的概率还取决于队伍其他成员的权重。",
           "source_raw": "code=23, data_id=0, value=0.5",
           "record_count": 1,
           "ability_orders": [
@@ -201932,7 +201956,7 @@
               "translation_status": "translated",
               "original_text": "攻撃対象に選ばれる重みが×50%（50%減少）",
               "source_raw": "code=23, data_id=0, value=0.5",
-              "comment_chinese": "",
+              "comment_chinese": "角色同时具有code=23、data_id=0的value=1与value=0.5；该参数表示被选为攻击目标的权重，value=1是中性倍率。同类特性按乘法合并，最终权重仍为50%（减少50%）；最终被选中的概率还取决于队伍其他成员的权重。",
               "ability_order": 12
             }
           ]
@@ -209093,7 +209117,7 @@
           "group": "其他特性",
           "category": "trait",
           "description_chinese": "被选为攻击目标的权重变为×50%（减少50%）",
-          "comment_chinese": "",
+          "comment_chinese": "角色同时具有code=23、data_id=0的value=1与value=0.5；该参数表示被选为攻击目标的权重，value=1是中性倍率。同类特性按乘法合并，最终权重仍为50%（减少50%）；最终被选中的概率还取决于队伍其他成员的权重。",
           "source_raw": "code=23, data_id=0, value=0.5",
           "record_count": 1,
           "ability_orders": [
@@ -209112,7 +209136,7 @@
               "translation_status": "translated",
               "original_text": "攻撃対象に選ばれる重みが×50%（50%減少）",
               "source_raw": "code=23, data_id=0, value=0.5",
-              "comment_chinese": "",
+              "comment_chinese": "角色同时具有code=23、data_id=0的value=1与value=0.5；该参数表示被选为攻击目标的权重，value=1是中性倍率。同类特性按乘法合并，最终权重仍为50%（减少50%）；最终被选中的概率还取决于队伍其他成员的权重。",
               "ability_order": 10
             }
           ]
@@ -209364,7 +209388,7 @@
           "group": "其他特性",
           "category": "trait",
           "description_chinese": "被选为攻击目标的权重变为×50%（减少50%）",
-          "comment_chinese": "",
+          "comment_chinese": "角色同时具有code=23、data_id=0的value=1与value=0.5；该参数表示被选为攻击目标的权重，value=1是中性倍率。同类特性按乘法合并，最终权重仍为50%（减少50%）；最终被选中的概率还取决于队伍其他成员的权重。",
           "source_raw": "code=23, data_id=0, value=0.5",
           "record_count": 1,
           "ability_orders": [
@@ -209383,7 +209407,7 @@
               "translation_status": "translated",
               "original_text": "攻撃対象に選ばれる重みが×50%（50%減少）",
               "source_raw": "code=23, data_id=0, value=0.5",
-              "comment_chinese": "",
+              "comment_chinese": "角色同时具有code=23、data_id=0的value=1与value=0.5；该参数表示被选为攻击目标的权重，value=1是中性倍率。同类特性按乘法合并，最终权重仍为50%（减少50%）；最终被选中的概率还取决于队伍其他成员的权重。",
               "ability_order": 11
             }
           ]
@@ -229069,7 +229093,7 @@
           "group": "行动次数",
           "category": "action",
           "description_chinese": "30%概率追加1次行动",
-          "comment_chinese": "",
+          "comment_chinese": "角色同时拥有两条30%概率追加行动特性，每条特性分别独立判定。至少追加1次行动的概率为51%，两次判定都成功的概率为9%，最多追加2次行动。",
           "source_raw": "code=61, data_id=0, value=0.3",
           "record_count": 1,
           "ability_orders": [
@@ -229088,7 +229112,7 @@
               "translation_status": "translated",
               "original_text": "30%の確率で追加行動1回",
               "source_raw": "code=61, data_id=0, value=0.3",
-              "comment_chinese": "",
+              "comment_chinese": "角色同时拥有两条30%概率追加行动特性，每条特性分别独立判定。至少追加1次行动的概率为51%，两次判定都成功的概率为9%，最多追加2次行动。",
               "ability_order": 10
             }
           ]
@@ -229097,7 +229121,7 @@
           "group": "行动次数",
           "category": "action",
           "description_chinese": "30%概率追加1次行动（特性出现第2次；每条特性分别进行概率判定，重复记录会增加触发次数）",
-          "comment_chinese": "",
+          "comment_chinese": "角色同时拥有两条30%概率追加行动特性，每条特性分别独立判定。至少追加1次行动的概率为51%，两次判定都成功的概率为9%，最多追加2次行动。",
           "source_raw": "code=61, data_id=0, value=0.3",
           "record_count": 1,
           "ability_orders": [
@@ -229116,7 +229140,7 @@
               "translation_status": "translated",
               "original_text": "30%の確率で追加行動1回",
               "source_raw": "code=61, data_id=0, value=0.3",
-              "comment_chinese": "",
+              "comment_chinese": "角色同时拥有两条30%概率追加行动特性，每条特性分别独立判定。至少追加1次行动的概率为51%，两次判定都成功的概率为9%，最多追加2次行动。",
               "ability_order": 11
             }
           ]
@@ -244173,7 +244197,7 @@
           "group": "属性强化",
           "category": "special",
           "description_chinese": "银河属性强化 +50%",
-          "comment_chinese": "",
+          "comment_chinese": "角色913另有<属性強化 40-50,41-50>，其中银河属性（属性ID 41）再次获得+50%强化。游戏会将同一属性的属性强化相加，因此银河属性实际强化合计为+100%，重力属性（属性ID 40）强化+50%。",
           "source_raw": "<属性強化 41-50>",
           "record_count": 1,
           "ability_orders": [
@@ -244192,7 +244216,7 @@
               "translation_status": "translated",
               "original_text": "<属性強化 41-50>",
               "source_raw": "<属性強化 41-50>",
-              "comment_chinese": "",
+              "comment_chinese": "角色913另有<属性強化 40-50,41-50>，其中银河属性（属性ID 41）再次获得+50%强化。游戏会将同一属性的属性强化相加，因此银河属性实际强化合计为+100%，重力属性（属性ID 40）强化+50%。",
               "ability_order": 32
             }
           ]
@@ -244229,7 +244253,7 @@
           "group": "属性强化",
           "category": "special",
           "description_chinese": "重力、银河属性威力 +50%",
-          "comment_chinese": "",
+          "comment_chinese": "该备注中的银河属性（属性ID 41）与角色913另一条<属性強化 41-50>备注重复；游戏会将同一属性的属性强化相加，因此银河属性实际强化合计为+100%，重力属性（属性ID 40）强化+50%。",
           "source_raw": "<属性強化 40-50,41-50>",
           "record_count": 1,
           "ability_orders": [
@@ -244248,7 +244272,7 @@
               "translation_status": "translated",
               "original_text": "<属性強化 40-50,41-50>",
               "source_raw": "<属性強化 40-50,41-50>",
-              "comment_chinese": "",
+              "comment_chinese": "该备注中的银河属性（属性ID 41）与角色913另一条<属性強化 41-50>备注重复；游戏会将同一属性的属性强化相加，因此银河属性实际强化合计为+100%，重力属性（属性ID 40）强化+50%。",
               "ability_order": 35
             }
           ]

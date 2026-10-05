@@ -17,6 +17,7 @@
     loadStatus: document.getElementById("load-status"),
     searchInput: document.getElementById("search-input"),
     searchButton: document.getElementById("search-button"),
+    onlineSiteLink: document.getElementById("online-site-link"),
     faceMode: document.getElementById("face-mode"),
     actorMode: document.getElementById("actor-mode"),
     supplementaryMode: document.getElementById("supplementary-mode"),
@@ -137,6 +138,16 @@
     if (className) node.className = className;
     node.textContent = value;
     return node;
+  }
+
+  function configureOnlineLink() {
+    const url = window.ACTOR_WEB_CONFIG && typeof window.ACTOR_WEB_CONFIG.onlineSiteUrl === "string"
+      ? window.ACTOR_WEB_CONFIG.onlineSiteUrl.trim()
+      : "";
+    if (/^https?:\/\//i.test(url)) {
+      elements.onlineSiteLink.href = url;
+      elements.onlineSiteLink.hidden = false;
+    }
   }
 
   function setFaceSource(faceFrame, actor) {
@@ -309,11 +320,15 @@
   }
 
   async function init() {
+    configureOnlineLink();
     readUrlState();
     try {
-      const response = await fetch(DATA_URL, { cache: "no-cache" });
-      if (!response.ok) throw new Error("HTTP " + response.status);
-      const data = await response.json();
+      let data = window.ACTOR_WEB_DATA;
+      if (!data || !Array.isArray(data.actors)) {
+        const response = await fetch(DATA_URL, { cache: "no-cache" });
+        if (!response.ok) throw new Error("HTTP " + response.status);
+        data = await response.json();
+      }
       actors = list(data.actors).map(normalizeActor);
       updateMetrics();
       elements.loadStatus.textContent = "数据已加载";
