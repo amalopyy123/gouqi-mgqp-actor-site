@@ -58,6 +58,22 @@ powershell -ExecutionPolicy Bypass -File .\research-mod\web-data\publish_actor_s
 
 不加 `-RefreshData` 时，脚本不会重新读取 CSV，只会复制当前网页目录中的文件。
 
+## 同时更新在线版和离线版
+
+在仓库根目录执行：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\research-mod\web-data\publish_actor_sites.ps1
+```
+
+脚本会先刷新数据并更新 `git文件/gouqi-mgqp-actor-site/`，再生成并更新 `git文件/gouqi-mgqp-actor-offline/`。也可以分别指定两个输出目录：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\research-mod\web-data\publish_actor_sites.ps1 `
+  -OnlineDestination .\git文件\gouqi-mgqp-actor-site `
+  -OfflineDestination .\git文件\gouqi-mgqp-actor-offline
+```
+
 ## 生成离线版
 
 在仓库根目录执行：
