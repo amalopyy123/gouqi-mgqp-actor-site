@@ -31746,7 +31746,7 @@
           "group": "其他",
           "category": "special",
           "description_chinese": "反击强化 900%",
-          "comment_chinese": "",
+          "comment_chinese": "固有能力说明中的“反击攻击力提升两级”实际对应反击伤害提升2阶段。原始备注<反撃強化 900%>会在基础倍率上增加900%，使反击伤害变为×1000%（10倍）；该数值与2阶段强化一致。",
           "source_raw": "<反撃強化 900%>",
           "record_count": 1,
           "ability_orders": [
@@ -31765,7 +31765,7 @@
               "translation_status": "translated",
               "original_text": "<反撃強化 900%>",
               "source_raw": "<反撃強化 900%>",
-              "comment_chinese": "",
+              "comment_chinese": "固有能力说明中的“反击攻击力提升两级”实际对应反击伤害提升2阶段。原始备注<反撃強化 900%>会在基础倍率上增加900%，使反击伤害变为×1000%（10倍）；该数值与2阶段强化一致。",
               "ability_order": 28
             }
           ]
@@ -144912,7 +144912,7 @@
           "group": "其他",
           "category": "special",
           "description_chinese": "必中闪避率 +30%",
-          "comment_chinese": "固有能力说明中的“万能回避率”有对应备注<必中回避率 30%>（必中闪避率 +30%），因此不能判定为缺少第三项回避相关来源；普通回避率与魔法回避率则分别由角色特性提升30%。",
+          "comment_chinese": "",
           "source_raw": "<必中回避率 30%>",
           "record_count": 1,
           "ability_orders": [
@@ -144931,7 +144931,7 @@
               "translation_status": "translated",
               "original_text": "<必中回避率 30%>",
               "source_raw": "<必中回避率 30%>",
-              "comment_chinese": "固有能力说明中的“万能回避率”有对应备注<必中回避率 30%>（必中闪避率 +30%），因此不能判定为缺少第三项回避相关来源；普通回避率与魔法回避率则分别由角色特性提升30%。",
+              "comment_chinese": "",
               "ability_order": 29
             }
           ]
@@ -152208,7 +152208,7 @@
           "group": "其他",
           "category": "special",
           "description_chinese": "必中闪避率 +30%",
-          "comment_chinese": "固有能力说明中的“万能回避率”有对应备注<必中回避率 30%>（必中闪避率 +30%），因此不能判定为缺少第三项回避相关来源；普通回避率与魔法回避率则分别由角色特性提升30%。",
+          "comment_chinese": "",
           "source_raw": "<必中回避率 30%>",
           "record_count": 1,
           "ability_orders": [
@@ -152227,7 +152227,7 @@
               "translation_status": "translated",
               "original_text": "<必中回避率 30%>",
               "source_raw": "<必中回避率 30%>",
-              "comment_chinese": "固有能力说明中的“万能回避率”有对应备注<必中回避率 30%>（必中闪避率 +30%），因此不能判定为缺少第三项回避相关来源；普通回避率与魔法回避率则分别由角色特性提升30%。",
+              "comment_chinese": "",
               "ability_order": 30
             }
           ]
@@ -152740,7 +152740,7 @@
           "group": "其他",
           "category": "special",
           "description_chinese": "反击强化 2900%",
-          "comment_chinese": "固有能力说明称攻击力提升3级，但原始备注<反撃強化 2900%>提升的是反击伤害：在基础倍率上增加2900%，即反击伤害变为×3000%（30倍）。同组的code=22、data_id=6特性提升反击率75%；没有发现攻击力上升状态或攻击力参数强化，因此“攻击力提升3级”与实际效果不符。",
+          "comment_chinese": "固有能力说明中的“反击率大幅提升”由同组的code=22、data_id=6特性实现，即反击率增加75%；“攻击力提升3级”实际对应反击伤害提升3阶段。原始备注<反撃強化 2900%>会在基础倍率上增加2900%，使反击伤害变为×3000%（30倍），与3阶段强化一致。",
           "source_raw": "<反撃強化 2900%>",
           "record_count": 1,
           "ability_orders": [
@@ -152759,7 +152759,7 @@
               "translation_status": "translated",
               "original_text": "<反撃強化 2900%>",
               "source_raw": "<反撃強化 2900%>",
-              "comment_chinese": "固有能力说明称攻击力提升3级，但原始备注<反撃強化 2900%>提升的是反击伤害：在基础倍率上增加2900%，即反击伤害变为×3000%（30倍）。同组的code=22、data_id=6特性提升反击率75%；没有发现攻击力上升状态或攻击力参数强化，因此“攻击力提升3级”与实际效果不符。",
+              "comment_chinese": "固有能力说明中的“反击率大幅提升”由同组的code=22、data_id=6特性实现，即反击率增加75%；“攻击力提升3级”实际对应反击伤害提升3阶段。原始备注<反撃強化 2900%>会在基础倍率上增加2900%，使反击伤害变为×3000%（30倍），与3阶段强化一致。",
               "ability_order": 33
             }
           ]
@@ -153721,7 +153721,7 @@
           "group": "其他",
           "category": "special",
           "description_chinese": "必中闪避率 +30%",
-          "comment_chinese": "固有能力说明中的“万能回避率”有对应备注<必中回避率 30%>（必中闪避率 +30%），因此不能判定为缺少第三项回避相关来源；普通回避率与魔法回避率则分别由角色特性提升30%。",
+          "comment_chinese": "",
           "source_raw": "<必中回避率 30%>",
           "record_count": 1,
           "ability_orders": [
@@ -153740,7 +153740,7 @@
               "translation_status": "translated",
               "original_text": "<必中回避率 30%>",
               "source_raw": "<必中回避率 30%>",
-              "comment_chinese": "固有能力说明中的“万能回避率”有对应备注<必中回避率 30%>（必中闪避率 +30%），因此不能判定为缺少第三项回避相关来源；普通回避率与魔法回避率则分别由角色特性提升30%。",
+              "comment_chinese": "",
               "ability_order": 29
             }
           ]
@@ -174407,7 +174407,7 @@
           "group": "技能强化",
           "category": "skill_boost",
           "description_chinese": "刀技、暗技、粘液技、造技强化 +50%",
-          "comment_chinese": "",
+          "comment_chinese": "角色拥有粘液技使用权限，但初始状态没有学会任何粘液技技能，因此当前状态下没有可用的粘液技。",
           "source_raw": "<スキルタイプ強化 9-50,27-50,52-50,60-50>",
           "record_count": 1,
           "ability_orders": [
@@ -174426,7 +174426,7 @@
               "translation_status": "translated",
               "original_text": "<スキルタイプ強化 9-50,27-50,52-50,60-50>",
               "source_raw": "<スキルタイプ強化 9-50,27-50,52-50,60-50>",
-              "comment_chinese": "",
+              "comment_chinese": "角色拥有粘液技使用权限，但初始状态没有学会任何粘液技技能，因此当前状态下没有可用的粘液技。",
               "ability_order": 35
             }
           ]
@@ -174563,7 +174563,7 @@
           "group": "技能链",
           "category": "skill_chain",
           "description_chinese": "暗技→粘液技→刀技技能链",
-          "comment_chinese": "",
+          "comment_chinese": "角色拥有粘液技使用权限，但初始状态没有学会任何粘液技技能，因此当前状态下没有可用的粘液技。",
           "source_raw": "<スキルチェーン 27,52,9>",
           "record_count": 1,
           "ability_orders": [
@@ -174582,7 +174582,7 @@
               "translation_status": "translated",
               "original_text": "<スキルチェーン 27,52,9>",
               "source_raw": "<スキルチェーン 27,52,9>",
-              "comment_chinese": "",
+              "comment_chinese": "角色拥有粘液技使用权限，但初始状态没有学会任何粘液技技能，因此当前状态下没有可用的粘液技。",
               "ability_order": 41
             }
           ]
@@ -174591,7 +174591,7 @@
           "group": "技能链",
           "category": "skill_chain",
           "description_chinese": "造技→粘液技→刀技技能链",
-          "comment_chinese": "",
+          "comment_chinese": "角色拥有粘液技使用权限，但初始状态没有学会任何粘液技技能，因此当前状态下没有可用的粘液技。",
           "source_raw": "<スキルチェーン 60,52,9>",
           "record_count": 1,
           "ability_orders": [
@@ -174610,7 +174610,7 @@
               "translation_status": "translated",
               "original_text": "<スキルチェーン 60,52,9>",
               "source_raw": "<スキルチェーン 60,52,9>",
-              "comment_chinese": "",
+              "comment_chinese": "角色拥有粘液技使用权限，但初始状态没有学会任何粘液技技能，因此当前状态下没有可用的粘液技。",
               "ability_order": 42
             }
           ]
@@ -175053,7 +175053,7 @@
           "group": "技能链",
           "category": "skill_chain",
           "description_chinese": "暗技→粘液技→刀技技能链",
-          "comment_chinese": "",
+          "comment_chinese": "角色拥有粘液技使用权限，但初始状态没有学会任何粘液技技能，因此当前状态下没有可用的粘液技。",
           "source_raw": "<スキルチェーン 27,52,9>",
           "record_count": 1,
           "ability_orders": [
@@ -175072,7 +175072,7 @@
               "translation_status": "translated",
               "original_text": "<スキルチェーン 27,52,9>",
               "source_raw": "<スキルチェーン 27,52,9>",
-              "comment_chinese": "",
+              "comment_chinese": "角色拥有粘液技使用权限，但初始状态没有学会任何粘液技技能，因此当前状态下没有可用的粘液技。",
               "ability_order": 42
             }
           ]
@@ -221674,7 +221674,7 @@
           "group": "其他",
           "category": "special",
           "description_chinese": "反击强化 2900%",
-          "comment_chinese": "",
+          "comment_chinese": "固有能力说明中的“反击率大幅提升”由同组的code=22、data_id=6特性实现，即反击率增加75%；但“反击攻击力提升5阶段”与原始备注不一致。<反撃強化 2900%>实际使反击伤害提升3阶段：在基础倍率上增加2900%，使反击伤害变为×3000%（30倍），不是5阶段；5阶段对应<反撃強化 299900%>。",
           "source_raw": "<反撃強化 2900%>",
           "record_count": 1,
           "ability_orders": [
@@ -221693,7 +221693,7 @@
               "translation_status": "translated",
               "original_text": "<反撃強化 2900%>",
               "source_raw": "<反撃強化 2900%>",
-              "comment_chinese": "",
+              "comment_chinese": "固有能力说明中的“反击率大幅提升”由同组的code=22、data_id=6特性实现，即反击率增加75%；但“反击攻击力提升5阶段”与原始备注不一致。<反撃強化 2900%>实际使反击伤害提升3阶段：在基础倍率上增加2900%，使反击伤害变为×3000%（30倍），不是5阶段；5阶段对应<反撃強化 299900%>。",
               "ability_order": 36
             }
           ]
