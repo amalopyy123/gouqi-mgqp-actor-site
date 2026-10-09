@@ -243059,7 +243059,7 @@
           "group": "其他",
           "category": "special",
           "description_chinese": "物理反射率 +100%",
-          "comment_chinese": "这条备注明确配置物理反射率 +100%；角色另有魔法反射率 +100% 的特性，以及<必中反射率 30%>备注。因此“物理和万能反射缺少source_raw”的判断不成立。",
+          "comment_chinese": "",
           "source_raw": "<物理反射率 100%>",
           "record_count": 1,
           "ability_orders": [
@@ -243078,7 +243078,7 @@
               "translation_status": "translated",
               "original_text": "<物理反射率 100%>",
               "source_raw": "<物理反射率 100%>",
-              "comment_chinese": "这条备注明确配置物理反射率 +100%；角色另有魔法反射率 +100% 的特性，以及<必中反射率 30%>备注。因此“物理和万能反射缺少source_raw”的判断不成立。",
+              "comment_chinese": "",
               "ability_order": 30
             }
           ]
@@ -243087,7 +243087,7 @@
           "group": "其他",
           "category": "special",
           "description_chinese": "必中反射率 +30%",
-          "comment_chinese": "这条备注明确配置必中反射率 +30%；角色另有<物理反射率 100%>备注和魔法反射率 +100% 的特性。因此“物理和万能反射缺少source_raw”的判断不成立。",
+          "comment_chinese": "",
           "source_raw": "<必中反射率 30%>",
           "record_count": 1,
           "ability_orders": [
@@ -243106,7 +243106,7 @@
               "translation_status": "translated",
               "original_text": "<必中反射率 30%>",
               "source_raw": "<必中反射率 30%>",
-              "comment_chinese": "这条备注明确配置必中反射率 +30%；角色另有<物理反射率 100%>备注和魔法反射率 +100% 的特性。因此“物理和万能反射缺少source_raw”的判断不成立。",
+              "comment_chinese": "",
               "ability_order": 31
             }
           ]
